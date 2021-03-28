@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using Library;
+using External;
 
 namespace Project
 {
@@ -21,9 +22,9 @@ namespace Project
             return new Generalized<BaseTest>();
         }
 
-
         static void Main(string[] args)
         {
+            External.ExternalBaseTest ebt = new ExternalBaseTest();
             BaseTest bt = new BaseTest();
             Child cd = new Child();
 
@@ -37,8 +38,6 @@ namespace Project
             bool var = cd is BaseTest;
 
             Generalized<BaseTest> gt = new Generalized<BaseTest>();
-
-            
 
             Console.WriteLine("Hello World!");
         }
