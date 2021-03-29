@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 using Library;
 using External;
 
@@ -17,11 +16,8 @@ namespace Project
         //------------------------------------------------------------------------------------------
         // Method type BaseTest. Method takes type BaseTest and return type BaseTest
         //------------------------------------------------------------------------------------------
-        static BaseTest Foo(BaseTest bt)
-        {
-            return new BaseTest();
-        }
-
+        public static BaseTest Foo(BaseTest bt) => new BaseTest();
+   
         //------------------------------------------------------------------------------------------
         // Generalized method type BaseTest
         //------------------------------------------------------------------------------------------
@@ -57,8 +53,8 @@ namespace Project
             //------------------------------------------------------------------------------------------
             // Delegates
             //------------------------------------------------------------------------------------------
-            Del del = (BaseTest bt) => new BaseTest();
-            Del1<BaseTest, Child> _del = Foo;
+            Del del = (BaseTest bt11) => new BaseTest();
+            Del1<BaseTest, Child> del1 = Foo;
 
             //------------------------------------------------------------------------------------------
             // Casts of type BaseTest

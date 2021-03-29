@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Library
+﻿namespace Library
 {
     //------------------------------------------------------------------------------------------
     // Abstract class. Method type BaseTest takes a type BaseTest and returns type BestTest

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Library
+﻿namespace Library
 {
     //------------------------------------------------------------------------------------------
     // Generic class and method. Implementation in Program with type BaseTest

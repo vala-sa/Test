@@ -11,6 +11,17 @@ namespace Library
         {
             private class BaseTest
             {
+                //------------------------------------------------------------------------------------------
+                // Nested function type BaseTest
+                //------------------------------------------------------------------------------------------
+                private BaseTest BaseTestFoo(BaseTest bt)
+                {
+                    BaseTest BaseTestFoo1(BaseTest bt1)
+                    {
+                        return new BaseTest();
+                    }
+                    return new BaseTest();
+                }
 
             }
         }
@@ -46,7 +57,7 @@ namespace Library
 
         }
 
-        private BaseTest(int bt) // private constructor
+        private BaseTest(params  BaseTest[] bt) // private constructor with params
         {
 
         }
@@ -62,10 +73,10 @@ namespace Library
         }
 
         //------------------------------------------------------------------------------------------
-        // Class BaseTest member
+        // Class BaseTest readonly member
         //------------------------------------------------------------------------------------------
 
-        private BaseTest bt = new BaseTest();
+        private readonly BaseTest _bt = new BaseTest();
 
         //------------------------------------------------------------------------------------------
         // Property sets and returns the object type BaseTest

@@ -6,6 +6,6 @@
     //------------------------------------------------------------------------------------------
     public interface IBase
     {
-        BaseTest BaseTest(BaseTest bt);
+        public BaseTest BaseTest(BaseTest bt);
     }
 }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Library
+﻿namespace Library
 {
     //------------------------------------------------------------------------------------------
     // Internal interface IInternal. With the same type as in Project
@@ -10,9 +6,9 @@ namespace Library
     //------------------------------------------------------------------------------------------
     internal interface IInternal
     {
-        interface INewInterface
+        internal interface INewInterface
         {
-            interface IInternal
+            internal interface IInternal
             {
                 
             }
@@ -28,6 +24,6 @@ namespace Library
         //------------------------------------------------------------------------------------------
         // Explicit implementation of the interface in the class BaseTest
         //------------------------------------------------------------------------------------------
-        BaseTest BaseTest(BaseTest bt);
+       public BaseTest BaseTest(BaseTest bt);
     }
 }

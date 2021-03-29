@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Library;
+﻿using Library;
 
 namespace Project
 {
@@ -24,12 +21,12 @@ namespace Project
         //------------------------------------------------------------------------------------------
         public override BaseTest Foo1(BaseTest bt) // public method
         {
-            return base.Foo1(bt);
+            return new BaseTest();
         }
 
         protected override BaseTest Foo2(BaseTest bt) // protected method
         {
-            return base.Foo2(bt);
+            return new BaseTest();
         }
 
         public new BaseTest Foo4(BaseTest bt) // public hide method
@@ -54,7 +51,7 @@ namespace Project
     //------------------------------------------------------------------------------------------
     // Child class of class Abstract
     //------------------------------------------------------------------------------------------
-    class Child1 : Abstract
+    public class Child1 : Abstract
     {
 
     }
@@ -62,7 +59,7 @@ namespace Project
     //------------------------------------------------------------------------------------------
     // Child class of class Generalized<BaseTest>
     //------------------------------------------------------------------------------------------
-    class Child2 : Generalized<BaseTest>
+    public class Child2 : Generalized<BaseTest>
     {
 
     }
