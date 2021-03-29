@@ -4,21 +4,30 @@ using System.Text;
 
 namespace Library
 {
+    //------------------------------------------------------------------------------------------
+    // Internal interface IInternal. With the same type as in Project
+    // Nested interface with the same type IInternal.
+    //------------------------------------------------------------------------------------------
     internal interface IInternal
     {
         interface INewInterface
         {
-            public IInternal BaseTest(IInternal var)
+            interface IInternal
+            {
+                
+            }
+            //------------------------------------------------------------------------------------------
+            // The type Library.IInternal method takes a type IInternal parameter
+            // Return type BaseTest
+            //------------------------------------------------------------------------------------------
+            public Library.IInternal BaseTest(IInternal var)
             {
                 return new BaseTest();
             }
         }
-
-        public IInternal Foo(IInternal var)
-        {
-            return var;
-        }
-
+        //------------------------------------------------------------------------------------------
+        // Explicit implementation of the interface in the class BaseTest
+        //------------------------------------------------------------------------------------------
         BaseTest BaseTest(BaseTest bt);
     }
 }
