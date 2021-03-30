@@ -51,7 +51,7 @@ namespace Project
     //------------------------------------------------------------------------------------------
     // Child class of class Abstract
     //------------------------------------------------------------------------------------------
-    public class Child1 : Abstract
+    public class Child1 : AbstractNegative
     {
 
     }

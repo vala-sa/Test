@@ -21,6 +21,25 @@
                 return new BaseTest();
             }
         }
+
+        //------------------------------------------------------------------------------------------
+        // Interface inheritance
+        //------------------------------------------------------------------------------------------
+
+        internal interface IInterfaceTest
+        {
+            
+        }
+
+        internal class InterfaceTest : IInterfaceTest
+        {
+
+        }
+
+        internal interface IChildTest : IInterfaceTest
+        {
+            
+        }
         //------------------------------------------------------------------------------------------
         // Explicit implementation of the interface in the class BaseTest
         //------------------------------------------------------------------------------------------

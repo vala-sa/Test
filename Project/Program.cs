@@ -31,7 +31,7 @@ namespace Project
             //------------------------------------------------------------------------------------------
             // Third party library with the same interface class types and methods
             //------------------------------------------------------------------------------------------
-            External.ExternalBaseTest ebt = new ExternalBaseTest();
+            External.BaseTestExternal ext = new BaseTestExternal();
 
             //------------------------------------------------------------------------------------------
             // Class implementation (BaseTest, Child, Generalized)

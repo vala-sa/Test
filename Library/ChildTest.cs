@@ -1,6 +1,6 @@
 ﻿namespace Library
 {
-    class ChildTest : BaseTest // Class inherited from class BaseTest
+    public class ChildTest : BaseTest // Class inherited from class BaseTest
     {
         //------------------------------------------------------------------------------------------
         // Overridden methods of the base class inherited from BaseTest

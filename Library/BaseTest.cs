@@ -1,4 +1,4 @@
-﻿using alias = Library.BaseTest; // Alias for class BaseTest
+﻿// Alias for class BaseTest
 
 namespace Library
 {
@@ -9,7 +9,7 @@ namespace Library
         //------------------------------------------------------------------------------------------
         private class NewBaseTest
         {
-            private class BaseTest
+            protected class BaseTest
             {
                 //------------------------------------------------------------------------------------------
                 // Nested function type BaseTest
@@ -73,10 +73,16 @@ namespace Library
         }
 
         //------------------------------------------------------------------------------------------
-        // Class BaseTest readonly member
+        // Class BaseTest field
         //------------------------------------------------------------------------------------------
 
-        private readonly BaseTest _bt = new BaseTest();
+        private BaseTest _bt = new BaseTest();
+
+        //------------------------------------------------------------------------------------------
+        // Class BaseTest readonly field
+        //------------------------------------------------------------------------------------------
+
+        private readonly BaseTest _bt1 = new BaseTest();
 
         //------------------------------------------------------------------------------------------
         // Property sets and returns the object type BaseTest

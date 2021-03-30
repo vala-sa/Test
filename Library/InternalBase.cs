@@ -10,4 +10,15 @@
 
         }
     }
+
+    //------------------------------------------------------------------------------------------
+    // Partial class PartialBase
+    //------------------------------------------------------------------------------------------
+    public partial class PartialBase
+    {
+        private BaseTest BaseTest1(BaseTest bt1)
+        {
+            return new BaseTest();
+        }
+    }
 }

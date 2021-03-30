@@ -3,7 +3,7 @@
     //------------------------------------------------------------------------------------------
     // Internal interface IInternal. With the same type as in Library
     //------------------------------------------------------------------------------------------
-    public interface IInternal
+    internal interface IInternal
     {
     }
 }

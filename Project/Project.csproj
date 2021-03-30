@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <Reference Include="External">
-      <HintPath>..\External\External.dll</HintPath>
+      <HintPath>..\External\bin\Debug\netcoreapp3.1\External.dll</HintPath>
     </Reference>
   </ItemGroup>
 
